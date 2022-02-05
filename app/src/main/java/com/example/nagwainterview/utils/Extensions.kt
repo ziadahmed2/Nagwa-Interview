@@ -7,4 +7,4 @@ import com.example.nagwainterview.NagwaApplication
 
 val Int.toPx: Int get() = (this * getSystem().displayMetrics.density).toInt()
 
-fun showMessage(msg: String) = makeText(NagwaApplication.getAppContext(),msg, LENGTH_SHORT).show()
+fun showMessage(msg: String) = makeText(NagwaApplication.appContext,msg, LENGTH_SHORT).show()

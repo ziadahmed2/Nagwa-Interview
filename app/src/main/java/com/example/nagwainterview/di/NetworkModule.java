@@ -1,5 +1,8 @@
 package com.example.nagwainterview.di;
 
+import com.example.nagwainterview.BuildConfig;
+import com.example.nagwainterview.domain.main.MainServices;
+
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;
@@ -10,10 +13,11 @@ import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
 public class NetworkModule {
-    public static final String BASE_URL = "https://nagwa.free.beeceptor.com/";
+//    public static final String BASE_URL = "https://nagwa.free.beeceptor.com/";
 
     @Provides
     @Singleton
@@ -25,8 +29,15 @@ public class NetworkModule {
         httpClient.connectTimeout(120, TimeUnit.SECONDS).readTimeout(120, TimeUnit.SECONDS);
         return new Retrofit.Builder()
                 .baseUrl(url)
+                .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .client(httpClient.build())
                 .build();
+    }
+
+    @Singleton
+    @Provides
+    MainServices getMainServices(){
+        return getRetrofit(BuildConfig.BASE_URL).create(MainServices.class);
     }
 }
