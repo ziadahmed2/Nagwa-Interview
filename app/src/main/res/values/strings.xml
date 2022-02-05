@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Nagwa Interview</string>
+    <string name="connection_error_msg">Connection error, please try again later</string>
+    <string name="general_error">Something went wrong, please try again later</string>
 </resources>

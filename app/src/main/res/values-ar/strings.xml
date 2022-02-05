@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nagwa Interview</string>
+    <string name="connection_error_msg">خطأ في الاتصال، برجاء المحاولة في وقت لاحق.</string>
+    <string name="general_error">حدث خطأ ما، برجاء المحاولة في وقت لاحق.</string>
+</resources>

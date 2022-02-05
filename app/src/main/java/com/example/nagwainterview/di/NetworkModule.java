@@ -17,8 +17,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
 public class NetworkModule {
-//    public static final String BASE_URL = "https://nagwa.free.beeceptor.com/";
-
     @Provides
     @Singleton
     Retrofit getRetrofit(String url){
