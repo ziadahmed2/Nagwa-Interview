@@ -5,6 +5,7 @@ import android.content.Context
 import android.os.Bundle
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
+import androidx.appcompat.content.res.AppCompatResources
 import com.example.nagwainterview.R
 
 class SpinnerDialog(context: Context) : Dialog(context) {
@@ -20,7 +21,7 @@ class SpinnerDialog(context: Context) : Dialog(context) {
 
         setContentView(relativeLayout)
         window?.setLayout(80.toPx,80.toPx)
-        window?.setBackgroundDrawable(context.resources.getDrawable(R.drawable.spinner_progress_dialog))
+        window?.setBackgroundDrawable(AppCompatResources.getDrawable(context,R.drawable.spinner_progress_dialog))
 
         setCancelable(false)
         setCanceledOnTouchOutside(false)
