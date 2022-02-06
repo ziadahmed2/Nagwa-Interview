@@ -95,4 +95,8 @@ dependencies {
     def rxjava_dependency = "3.0.0"
     implementation "io.reactivex.rxjava3:rxandroid:$rxjava_dependency"
     implementation "io.reactivex.rxjava3:rxjava:$rxjava_dependency"
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 }

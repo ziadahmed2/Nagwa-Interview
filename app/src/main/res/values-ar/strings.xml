@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Nagwa Interview</string>
+    <string name="app_name">Nagwa Assignment</string>
     <string name="connection_error_msg">خطأ في الاتصال، برجاء المحاولة في وقت لاحق.</string>
     <string name="general_error">حدث خطأ ما، برجاء المحاولة في وقت لاحق.</string>
+    <string name="file_type_error">نوع الملف غير معروف.</string>
+    <string name="file_not_found">لم يتم العثور علي الملف</string>
+    <string name="file_status">حالة الملف</string>
+    <string name="file_type">نوع الملف</string>
+    <string name="download_percent">تم تحميل %d%%</string>
+    <string name="download_complete">انتهي التنزيل</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">الغاء</string>
+    <string name="download">تنزيل</string>
+    <string name="download_confirmation">هل انت متأكد من تنزيل %s؟</string>
 </resources>

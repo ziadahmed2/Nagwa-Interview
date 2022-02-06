@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">Nagwa Interview</string>
+    <string name="app_name">Nagwa Assignment</string>
     <string name="connection_error_msg">Connection error, please try again later</string>
     <string name="general_error">Something went wrong, please try again later</string>
+    <string name="file_type_error">File type Unknown</string>
+    <string name="file_not_found">File Not found</string>
+    <string name="file_status">File Status</string>
+    <string name="file_type">File\'s Type</string>
+    <string name="download_percent">%d%% Downloaded</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="download">Download</string>
+    <string name="download_confirmation">Are you sure you want to download %s</string>
 </resources>

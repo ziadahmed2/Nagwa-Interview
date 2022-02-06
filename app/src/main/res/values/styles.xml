@@ -1,0 +1,41 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ScreenText_T1" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">#303030</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="ScreenText_T3" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">#545454</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonDefault" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/selector_btn_bg</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">50dp</item>
+        <item name="android:paddingEnd">50dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DialogSecondButton" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">50dp</item>
+        <item name="android:paddingEnd">50dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

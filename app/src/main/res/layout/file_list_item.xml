@@ -2,9 +2,10 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="2dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="12dp"
     app:cardElevation="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,22 +16,24 @@
             android:id="@+id/fileStatus"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic_not_downloaded"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            tools:src="@drawable/ic_downloaded"
+            android:contentDescription="@string/file_status"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/fileImage"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:src="@drawable/pdf"
+            tools:src="@drawable/pdf"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/file_type" />
 
         <TextView
             android:id="@+id/fileName"
@@ -38,11 +41,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:textAlignment="center"
-            android:text="File name One"
             android:textSize="18sp"
             android:textColor="@color/black"
             android:singleLine="true"
             android:ellipsize="marquee"
+            android:marqueeRepeatLimit="3"
+            tools:text="File Name"
             app:layout_constraintTop_toBottomOf="@+id/fileImage"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
