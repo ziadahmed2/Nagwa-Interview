@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Nagwa Assignment</string>
+    <string name="app_name">PDF &amp; Video Downloader</string>
     <string name="connection_error_msg">خطأ في الاتصال، برجاء المحاولة في وقت لاحق.</string>
     <string name="general_error">حدث خطأ ما، برجاء المحاولة في وقت لاحق.</string>
     <string name="file_type_error">نوع الملف غير معروف.</string>
